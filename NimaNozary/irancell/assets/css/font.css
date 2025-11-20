@@ -1,0 +1,7 @@
+@font-face {
+  font-family: irancellRegular;
+  src: url(../fonts/Irancell_Regular.ttf);
+}
+body {
+  font-family: irancellRegular;
+}
