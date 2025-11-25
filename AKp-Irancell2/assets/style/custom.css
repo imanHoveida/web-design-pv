@@ -1,0 +1,22 @@
+@keyframes pulse-slow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 0.8; }
+    }
+    @keyframes ping-slow-1 {
+        0%, 100% { transform: translate(0, 0) scale(1.0); opacity: 1; }
+        50% { transform: translate(5px, 5px) scale(1.1); opacity: 0.9; }
+    }
+     @keyframes ping-slow-2 {
+        0%, 100% { transform: translate(0, 0) scale(0.8); opacity: 0.8; }
+        50% { transform: translate(-5px, -5px) scale(0.9); opacity: 1; }
+    }
+
+    .animate-pulse-slow {
+        animation: pulse-slow 8s ease-in-out infinite;
+    }
+    .animate-ping-slow-1 {
+        animation: ping-slow-1 4s ease-in-out infinite;
+    }
+    .animate-ping-slow-2 {
+        animation: ping-slow-2 5.5s ease-in-out infinite;
+    }

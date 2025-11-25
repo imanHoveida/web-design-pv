@@ -1,0 +1,14 @@
+@font-face {
+  font-family:"MTNIrancell-Light";
+  src: url("../fonts/MTNIrancell-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html,
+body {
+  font-family: "MTNIrancell-Light";
+}
+
