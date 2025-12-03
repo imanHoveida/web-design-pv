@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبین نت | تمرین</title>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet" href="./fonts.css">
+    <style>
+        body {
+            direction: rtl;
+            font-family: iranian-sans;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="flex justify-between items-center bg-[#111111] py-[10px] text-[14px] list-none">
+                <div class="flex justify-right items-center gap-[20px] pr-[100px] text-[#888888]">
+                    <li><a href="#" class="text-[#a3c426] border-[6px] border-solid border-[#a3c426] border-l-0 border-r-0 border-t-0 py-4">محصولات خانگی</a></li>
+                    <li><a href="#" class="hover:text-[#a3c426] hover:border-[6px] hover:border-solid hover:border-[#a3c426] hover:border-l-0 hover:border-r-0 hover:border-t-0 transition duration-400 ease-in-out py-4">خدمات سازمانی</a></li>
+                </div>
+                <div class="flex justify-left items-center gap-[20px] pl-[100px] text-[#888888]">
+                    <li><a href="#" class="hover:text-[#a3c426] transition duration-400 ease-in-out">%جشنواره اینترنت فیبر نوری%</a></li>
+                    <li><button href="#" class="flex justify-center items-center gap-[10px] text-[#fff] text-[14px] font-[irsansb] bg-[#2f2f2f] rounded-3xl py-2 px-5 hover:text-[#a3c426] transition duration-400 ease-in-out"><svg width="24" height="24" fill="#fff" viewBox="0 0 24 24" transform="" id="injected-svg" class="border-[2px] border-solid border-[#fff] rounded-full hover:fill-[#a3c426] hover:border-[#a3c426] transition duration-400 ease-in-out"><path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5m0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1m6-7h4c2.76 0 5 2.24 5 5H5c0-2.76 2.24-5 5-5"/></svg>صفحه مشترکین</button></li>
+                </div>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="flex justify-between items-center px-[100px] text-[#fff] bg-[#262626]">
+                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                <li class="inline-block relative group">
+                    <div class="flex justify-center items-center gap-3 pt-[28px] pb-[28px] hover:text-[#a3c426] hover:border-[6px] hover:border-solid hover:border-[#a3c426] hover:border-l-0 hover:border-r-0 hover:border-t-0 transition duration-400 ease-in-out">
+                        <img src="./images/Icons.svg" alt="Icons">
+                        <a href="#">اینترنت</a>
+                    </div>
+                    <div class="absolute right-0 top-full z-[999] transform translate-y-[100px] opacity-0 invisible pointer-events-none transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto border-[2px] border-solid border-[#a3c426] rounded-b-xl">
+                        <ul>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">LTE</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">فیبر نوری</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">اینترنت 5G</a></li>
+                            <li class="w-full bg-[#000] rounded-b-xl"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] rounded-b-xl transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">آیپی ثابت</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex justify-center items-center gap-3 pt-[28px] pb-[28px] hover:text-[#a3c426] hover:border-[6px] hover:border-solid hover:border-[#a3c426] hover:border-l-0 hover:border-r-0 hover:border-t-0 transition duration-400 ease-in-out">
+                        <img src="./images/img.png" alt="img" class="w-6 h-4">
+                        <a href="#">محصولات Huawei</a>
+                    </div>
+                </li>
+                <li class="inline-block relative group">
+                    <div class="flex justify-center items-center gap-3 pt-[28px] pb-[28px] hover:text-[#a3c426] hover:border-[6px] hover:border-solid hover:border-[#a3c426] hover:border-l-0 hover:border-r-0 hover:border-t-0 transition duration-400 ease-in-out">
+                        <img src="./images/Group-1.svg" alt="Group-1">
+                        <a href="#">درباره مبین نت</a>
+                    </div>
+                    <div class="absolute right-0 top-full z-[999] transform translate-y-[100px] opacity-0 invisible pointer-events-none transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto border-[2px] border-solid border-[#a3c426] rounded-b-xl">
+                        <ul>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">درباره مبین نت</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">استخدام</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">مسئولیت اجتماعی</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">همگام در مسیر تعالی</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">ارتباط با ما</a></li>
+                            <li class="w-full bg-[#000] rounded-b-xl"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] rounded-b-xl transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">اخبار و مقالات</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="inline-block relative group">
+                    <div class="flex justify-center items-center gap-3 pt-[28px] pb-[28px] hover:text-[#a3c426] hover:border-[6px] hover:border-solid hover:border-[#a3c426] hover:border-l-0 hover:border-r-0 hover:border-t-0 transition duration-400 ease-in-out">
+                        <img src="./images/avamele-furush.svg" alt="avamele-furush">
+                        <a href="#">عوامل فروش</a>
+                    </div>
+                    <div class="absolute right-0 top-full z-[999] transform translate-y-[100px] opacity-0 invisible pointer-events-none transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto border-[2px] border-solid border-[#a3c426] rounded-b-xl">
+                        <ul>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">عوامل فروش اینترنت LTE</a></li>
+                            <li class="w-full bg-[#000] rounded-b-xl"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] rounded-b-xl transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">درخواست عاملیت فروش</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="inline-block relative group">
+                    <div class="flex justify-center items-center gap-3 pt-[28px] pb-[28px] hover:text-[#a3c426] hover:border-[6px] hover:border-solid hover:border-[#a3c426] hover:border-l-0 hover:border-r-0 hover:border-t-0 transition duration-400 ease-in-out">
+                        <img src="./images/Group-2.svg" alt="Group-2">
+                        <a href="#">پشتیبانی</a>
+                    </div>
+                    <div class="absolute right-0 top-full z-[999] transform translate-y-[100px] opacity-0 invisible pointer-events-none transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto border-[2px] border-solid border-[#a3c426] rounded-b-xl">
+                        <ul>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">مرکز خدمات 24 ساعته</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">خدمات مشترکین</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">اپلیکیشن مبین نت</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">پرسش های متداول</a></li>
+                            <li class="w-full bg-[#000]"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">صدای مشتری</a></li>
+                            <li class="w-full bg-[#000] rounded-b-xl"><a href="#" class="block text-white text-center text-[14px] hover:bg-[#262626] hover:text-[#a3c426] rounded-b-xl transition duration-200 ease-in-out py-4 px-[90px] whitespace-nowrap">واریزی اشتباه</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="flex justify-center items-center gap-3 px-5 py-2 bg-[#a3c426] rounded-full text-[#000]">
+                        <img src="./images/Icons.png" alt="Icons">
+                        <a href="#" class="font-[irsansb] text-[14px]">فروشگاه</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="relative flex items-center">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#a7cd39,#0c5753)] opacity-50 z-0"></div>
+        <img src="./images/File.aspx7_.jpg" alt="img" class="w-full">
+        <div class="absolute pr-[100px]">
+            <h3 class="text-[48px] text-[#fff] font-[irsansb] font-bold select-none">درباره‌ مبین‌نت</h3>
+            <p class="text-[30px] text-[#fff] select-none">شرکت ارتباطات مبین‌نت را بیشتر بشناسید</p>
+        </div>
+    </section>
+    <button class="fixed z-[1000] mx-2 my-44 bg-[#a6ce39] p-5 rounded-full border-[2px] border-[#a7cd39]">
+        <svg width="32" height="32" fill="#fff" viewBox="0 0 24 24" transform="" id="injected-svg"><path d="m12,3C6.49,3,2,6.59,2,11c0,2.91,1.9,5.51,5,6.93v3.07c0,.38.21.73.55.89.14.07.29.11.45.11.21,0,.42-.07.6-.2l3.74-2.8c5.36-.14,9.66-3.68,9.66-8S17.51,3,12,3Zm0,14c-.22,0-.43.07-.6.2l-2.4,1.8v-1.73c0-.41-.25-.78-.64-.93-2.69-1.04-4.36-3.08-4.36-5.34,0-3.31,3.59-6,8-6s8,2.69,8,6-3.59,6-8,6Z"/></svg>
+    </button>
+    <section class="px-[100px] pt-[75px]">
+        <h4 class="text-[#0c5753] text-[18px] mb-[15px] select-none">آشنایی با شرکت ارتباطات مبین‌نت</h4>
+        <h2 class="text-[#a7cd39] text-[36px] font-bold font-[irsansb] mb-5 select-none">تاریخچه‌ مبین‌نت</h2>
+        <p class="text-[#888888] text-[18px] text-justify select-none">شرکت ارتباطات مبین‌نت با هدف تبدیل شدن به انتخاب نخست مشتریان خدمات داده، ارتقای روزافزون سطح کیفی خدمات، با محوریت ارائه‌ خدمات ارتباطی باندپهن بی‌سیم در مقیاس کشوری، در آذر ماه سال ۱۳۸۷ تأسیس شد. این شرکت موفق شد در دهم بهمن سال ۱۳۹۵، شبکه بی‌سیم سراسری خود را بر بستر فناوری TD-LTE راه‌اندازی کند. همگام با ارائه اینترنت خانگی طیف وسیعی از خدمات ارتباطی و اینترنتی سازمانی نیز مبین‌نت را به‌عنوان بزرگترین اپراتور بی‌سیم در حوزه خدمات سازمانی مطرح کرده است. راه‌اندازی یک مرکزداده‌ مجهز این امکان را برای مبین‌نت ایجاد کرد تا بتواند در کنار ارائه‌ اینترنت پرسرعت بی‌سیم ثابت (TD-LTE)، خدمات اینترنت اختصاصی، شبکه‌های گسترده‌ی ارتباطی و اینترنت مدیریت شده، طیف وسیعی از خدمات مرکز داده نظیر سرورهای مجازی و اختصاصی را نیز ارائه کند. در سال‌های اخیر خدمات مبتنی‌بر اینترنت اشیاء و رایانش ابری نیز به سبد محصولات مبین‌نت افزوده شده و خدمات یکپارچه‌ای را در حوزه‌های خدمات خانگی، اداری و سازمانی ایجاد کرده است.</p>
+        <p class="text-[#888888] text-[18px] text-justify select-none">ارائه خدمات ارتباطی به چندین هزار Node سازمانی، خدمات هوشمند و مدیریت‌شده و بسیاری دیگر از راهکارهای ارزش‌افزوده، مبین‌نت را به انتخاب نخست سازمان‌ها، ارگان‌های دولتی و کسب‌وکارهای کوچک و بزرگ کشور تبدیل کرده است.</p>
+    </section>
+    <section class="flex justify-center items-center gap-5 px-[100px] bg-[#f2f2f2] mt-[75px] py-[75px]">
+        <div>
+            <video src="./images/Mobinnet-Clip-V6.mp4" type="video/mp4" class="w-full h-full" controls></video>
+        </div>
+        <div class="text-center">
+            <h3 class="text-[#a7cd39] text-[36px] font-bold font-[irsansb] mb-5 select-none">مبین‌نت در قاب دوربین</h3>
+            <p class="text-[#888888] text-[18px] text-center select-none">مبین‌نت در سال ۱۳۹۷ ده‌سالگی فعالیت خود را جشن گرفت. در این ویدیو تلاش‌های مبین‌نت برای ارائه خدمات به مشترکین خانگی و مشتریان سازمانی را مشاهده می‌کنید. مبین‌نت با تکیه بر فناوری TD-LTE، شبکه بی‌سیم سراسری، لینک‌های رادیویی و مرکزداده مجهز خود طیف وسیعی از خدمات ارتباطی، اینترنتی، دیجیتال و مرکزداده را ارائه می‌کند.</p>
+        </div>
+    </section>
+    <section class="relative flex justify-center items-center text-center pb-[75px]">
+        <div>
+            <img src="./images/section-bg-1.jpg" alt="section-bg-1" class="h-[400px] w-full">
+        </div>
+        <div class="absolute">
+            <h3 class="my-[55px] text-[#a7cd39] text-[36px] font-bold font-[irsansb] select-none">نشریات مبین‌نت</h3>
+            <div class="flex justify-between items-center gap-[100px]  pb-[55px]">
+                <div><a href="#" class="text-[#888888] text-[12px] font-[irsansb]"><img src="./images/img-1.png" alt="img-1" class="w-[60px] h-[90px] hover:transform hover:-translate-y-5 border-[2px] border-solid border-[#888888] transition duration-700 ease-in-out mb-4">نشریه شماره 1</a></div>
+                <div><a href="#" class="text-[#888888] text-[12px] font-[irsansb]"><img src="./images/img-2.png" alt="img-2" class="w-[60px] h-[90px] hover:transform hover:-translate-y-5 border-[2px] border-solid border-[#888888] transition duration-700 ease-in-out mb-4">نشریه شماره 2</a></div>
+                <div><a href="#" class="text-[#888888] text-[12px] font-[irsansb]"><img src="./images/img-3.png" alt="img-3" class="w-[60px] h-[90px] hover:transform hover:-translate-y-5 border-[2px] border-solid border-[#888888] transition duration-700 ease-in-out mb-4">نشریه شماره 3</a></div>
+                <div><a href="#" class="text-[#888888] text-[12px] font-[irsansb]"><img src="./images/img-4.png" alt="img-4" class="w-[60px] h-[90px] hover:transform hover:-translate-y-5 border-[2px] border-solid border-[#888888] transition duration-700 ease-in-out mb-4">نشریه شماره 4</a></div>
+                <div><a href="#" class="text-[#888888] text-[12px] font-[irsansb]"><img src="./images/img-5.png" alt="img-5" class="w-[60px] h-[90px] hover:transform hover:-translate-y-5 border-[2px] border-solid border-[#888888] transition duration-700 ease-in-out mb-4">نشریه شماره 5</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="flex-col justify-center items-center text-center mb-[75px]">
+        <div class="px-[100px]">
+            <h3 class="pb-[30px] text-[#a7cd39] text-[36px] font-bold font-[yekan] select-none">دریافت لوگو شرکت ارتباطات مبین‌نت</h3>
+            <p class="text-[#888888] text-[18px] select-none">درصورتی‌که به دریافت لوگوهای رسمی شرکت ارتباطات مبین‌نت احتیاج دارید می‌توانید آن‌ها را از بخش زیر دانلود کنید.</p>
+        </div>
+        <div class="flex justify-between items-center px-[100px] mt-[75px]">
+            <div class="border-[2px] border-solid dorder-[#888888] hover:border-[5px] hover:border-[#a3c426] transition duration-500 ease-in-out w-64 h-56 flex items-center justify-center overflow-hidden">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/logo-1.png" alt="logo-1" class="w-36 h-36 object-contain">
+                    <a href="#" class="text-[#0c5753] text-[16px] font-[irsansb]">لوگو فارسی (شماره1)</a>
+                </div>
+            </div>
+            <div class="border-[2px] border-solid dorder-[#888888] hover:border-[5px] hover:border-[#a3c426] transition duration-500 ease-in-out w-64 h-56 flex items-center justify-center overflow-hidden">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/logo-2.png" alt="logo-2" class="w-36 h-36 object-contain">
+                    <a href="#" class="text-[#0c5753] text-[16px] font-[irsansb]">لوگو فارسی (شماره2)</a>
+                </div>
+            </div>
+            <div class="border-[2px] border-solid dorder-[#888888] hover:border-[5px] hover:border-[#a3c426] transition duration-500 ease-in-out w-64 h-56 flex items-center justify-center overflow-hidden">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/logo-3.png" alt="logo-3" class="w-36 h-36 object-contain">
+                    <a href="#" class="text-[#0c5753] text-[16px] font-[irsansb]">لوگو انگلیسی (شماره1)</a>
+                </div>
+            </div>
+            <div class="border-[2px] border-solid dorder-[#888888] hover:border-[5px] hover:border-[#a3c426] transition duration-500 ease-in-out w-64 h-56 flex items-center justify-center overflow-hidden">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/logo-4.png" alt="logo-4" class="w-36 h-36 object-contain">
+                    <a href="#" class="text-[#0c5753] text-[16px] font-[irsansb]">لوگو انگلیسی (شماره2)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#333333] w-full h-[400px]">
+        <svg class="w-full h-60 block" viewBox="0 0 100 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 A80,80 0 0,0 100,0 L100,0 L0,0 Z" fill="#ffffff" /></svg>
+        <div class="flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center mt-[-200px]">
+                <img src="./images/phone.svg" alt="phone" class="bg-gradient-to-r from-[#9acc3a] to-[#11b24b] rounded-3xl p-3">
+                <h5 class="mt-8 text-[#fff] text-[24px] font-[yekan] select-none">هر روز هفته، 24 ساعته در کنار شما هستیم</h5>
+                <div class="flex justify-center items-center gap-6 mt-8">
+                    <a href="#" class="flex justify-center items-center gap-3 font-[irsansb] text-[#fff] bg-gradient-to-r from-[#9acc3a] to-[#11b24b] rounded-3xl px-4 py-3 w-60 h-12"><img src="./images/Stroke-1.svg" alt="Stroke-1">مرکز تماس</a>
+                    <a href="#" class="flex justify-center items-center gap-3 font-[irsansb] text-[#fff] bg-gradient-to-r from-[#9acc3a] to-[#11b24b] rounded-3xl px-4 py-3 w-60 h-12"><img src="./images/Group-37003.svg" alt="Group-37003">سامانه صدای مشتری</a>
+                </div>
+            </div>
+        </div>
+            <div class="flex justify-between items-center bg-gradient-to-r from-[#9acc3a] to-[#11b24b] w-full mt-8 py-8 px-[100px]">
+                <div class="flex flex-col">
+                    <h4 class="text-[#fff] text-[20px] font-[irsansb] select-none">یک ارتباط خاص با شما</h4>
+                    <p class="text-[#fff] text-[18px] font-[yekan] select-none">ما را در شبکه‌های اجتماعی دنبال کنید تا از جشنواره‌ها، تخفیف‌ها، مسابقات و آخرین اخبار زودتر از همه مطلع شوید.</p>
+                </div>
+                <div class="flex justify-center items-center gap-6">
+                    <a href="#" class="border-[2px] border-solid border-[#fff] rounded-full p-[2px]"><svg width="32" height="32" fill="#ffffff" viewBox="0 0 24 24" transform="" id="injected-svg"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083"/></svg></a>
+                    <a href="#" class="border-[2px] border-solid border-[#fff] rounded-full p-[2px]"><svg width="32" height="32" fill="#ffffff" viewBox="0 0 24 24" transform="" id="injected-svg"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248m0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008M16.806 6.129a1.078 1.078 0 1 0 0 2.156 1.078 1.078 0 1 0 0-2.156"/><path d="M20.533 6.111A4.6 4.6 0 0 0 17.9 3.479a6.6 6.6 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.6 6.6 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.6 6.6 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71s0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.6 4.6 0 0 0 2.634 2.632 6.6 6.6 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.6 6.6 0 0 0 2.186-.419 4.61 4.61 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.6 6.6 0 0 0-.421-2.217m-1.218 9.532a5 5 0 0 1-.311 1.688 2.99 2.99 0 0 1-1.712 1.711 5 5 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a5 5 0 0 1-1.669-.311 2.99 2.99 0 0 1-1.719-1.711 5.1 5.1 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654s0-2.686.053-3.655a5 5 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5 5 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a5 5 0 0 1 1.67.311 3 3 0 0 1 1.712 1.712 5.1 5.1 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655s0 2.698-.043 3.654z"/></svg></a>
+                    <a href="#" class="border-[2px] border-solid border-[#fff] rounded-full p-[2px]"><svg width="32" height="32" fill="#ffffff" viewBox="0 0 24 24" transform="" id="injected-svg"><path d="M21.593 7.203a2.5 2.5 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.52 2.52 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6 5.207 3.005z"/></svg></a>
+                    <a href="#" class="border-[2px] border-solid border-[#fff] rounded-full p-[2px]"><svg width="32" height="32" fill="#ffffff" viewBox="0 0 24 24" transform="" id="injected-svg"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M8.339 18.337H5.667v-8.59h2.672zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096m11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"/></svg></a>
+                </div>
+            </div>
+    </section>
+    <section class="flex justify-items-end gap-14 px-[100px] pb-[75px] text-[#979797] bg-[#111111]">
+        <div class="flex flex-col mt-[75px]">
+            <h4 class="text-[#fff] text-[20px] mb-[30px] select-none">ارتباط و پشتیبانی</h4>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">صفحه مشترکین</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">پرسش‌های متداول (FAQ)</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">مرکز خدمات ۲۴ ساعته</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">ارتباط با ما</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">اپلیکیشن مبین‌نت</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">آشنایی با رگولاتوری</a>
+        </div>
+        <div class="flex flex-col mt-[75px]">
+            <h4 class="text-[#fff] text-[20px] mb-[30px] select-none">خدمات LTE</h4>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">اینترنت LTE</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">اینترنت فیبر نوری</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">اینترنت برج‌ و مجتمع</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">اینترنت پرسرعت</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">مناطق تحت پوشش</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">طرح‌ها و تعرفه‌ها</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">فهرست عوامل فروش</a>
+            <a href="#" class="mb-3 hover:text-[#a3c426] transition duration-500 ease-in-out">آی‌ پی ثابت</a>
+        </div>
+        <div class="mt-[75px] pr-[200px]">
+            <a href="#">
+                <div class="flex justify-center items-center gap-3 bg-gradient-to-r from-[#9acc3a] to-[#11b24b] rounded-full px-6 py-2">
+                    <img src="./images/Footer_Buildings.svg" alt="Footer_Buildings" class="w-9 h-9">
+                    <div class="flex flex-col">
+                        <h6 class="text-[10px] text-[#fff] font-[irsansb]">خدمات سازمانی</h6>
+                        <p class="text-[10px] text-[#fff] font-[irsansb]">راهکارهای ویژه سازمان‌ها</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
