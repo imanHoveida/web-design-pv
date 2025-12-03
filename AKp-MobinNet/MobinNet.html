@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/tailwind.js">
+</script>
+
+    <title>Mobinnet</title>
+  <link rel="stylesheet" href="./assets/style/font.css">
+   <link rel="stylesheet" href="./assets/style/custom.css">
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeMenu = document.getElementById("closeMenu");
+
+    menuToggle.onclick = () => mobileMenu.classList.remove("hidden");
+    closeMenu.onclick = () => mobileMenu.classList.add("hidden");
+</script>
+
+</head>
+
+<body class="bg-white font-Vazirmatn-Light">
+<svg class="svg-defs" style="display: none;">
+<symbol id="user" viewBox="0 0 25 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 13C15.2614 13 17.5 10.7614 17.5 8C17.5 5.23858 15.2614 3 12.5 3C9.73858 3 7.5 5.23858 7.5 8C7.5 10.7614 9.73858 13 12.5 13ZM12.5 15C7.25329 15 3 19.3333 3 24H22C22 19.3333 17.7467 15 12.5 15Z" />
+</symbol>
+</svg>
+
+<header class="w-full font-Vazirmatn-Light rtl bg-[#262626] text-white ">
+
+   <div class="topbar bg-[#111]">
+        <div class="container relative mx-auto px-16">
+            <div class="topbar-content flex justify-between items-center h-[60px] lg:h-[60px]">
+                <button
+                    class="menu-toggle relative z-10 w-[22px] h-5 bg-transparent border-none cursor-pointer inline-block lg:hidden"
+                    id="navbarBottombar"
+                    type="button"
+                >
+                    <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                    <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                    <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+                </button>
+
+                <ul class="platforms flex items-center">
+                    <li class="flex-shrink-0">
+                        <a
+                            href="https://mobinnet.ir/"
+                            class="active text-[14px] relative text-gray-400 ml-5 hover:text-[#a3c426] font-sans"
+                        >
+                            محصولات خانگی
+                        </a>
+                    </li>
+                    <li class="flex-shrink-0">
+                        <a
+                            href="https://business.mobinnet.ir/"
+                            class="text-[14px] relative text-gray-400 hover:text-[#a3c426] font-sans"
+                        >
+                            خدمات سازمانی
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="useful-assets flex items-center justify-center hidden lg:flex">
+                    <a
+                        href="https://shop.mobinnet.ir/product/list?cat=691adbc3237c45ca14da25bc"
+                        class="offer-link text-[12x]  text-gray-500 transition-all duration-300 hover:text-[#a3c426] hidden lg:block"
+                    >
+                        %جشنواره اینترنت فیبرنوری%
+                    </a>
+
+                    <a href="https://shop.mobinnet.ir/?product_type=td-lte-modem" class="shop-btn lg:hidden">
+                        <img src="" alt="سازمانی" />
+                    </a>
+
+                    <a
+                        href="https://my.mobinnet.ir/Account/Signin?ReturnUrl=%2F"
+                        class="subscribers-panel bg-[#2f2f2f] h-[44px] rounded-full flex justify-center items-center text-[14px] font-normal text-white px-[25px] mr-3  mt-1.3 transition-all duration-300 hover:text-[#a3c426]"
+                    >
+                        <svg viewBox="0 0 25 24" class="w-6 stroke-white transition-all duration-300 ml-[10px] hover:stroke-[#a3c426]">
+                            <use xlink:href="#user"></use>
+                        </svg>
+                        <span>
+                            صفحه مشترکین
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[#262626] border-t border-[#333] px-16">
+        <div class="container mx-auto px-4 flex items-center justify-between h-[110px]">
+
+            
+            <a href="/" class="w-[140px] flex-shrink-0">
+                <img src="./assets/images/top-logo-fa.png" class="w-full" alt="Logo">
+            </a>
+
+            
+<nav class="hidden lg:flex items-center gap-8 z-50">
+
+    
+    <div class="relative group cursor-pointer nav-item">
+        <div class="flex items-center gap-2 group-hover:text-[#a3c426] transition">
+         
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 19C11.6569 19 13 14.9706 13 10C13 5.02944 11.6569 1 10 1C8.34315 1 7 5.02944 7 10C7 14.9706 8.34315 19 10 19Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 13L18 13" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 7L18 7" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            <span class="text-lg">اینترنت</span>
+            <svg class="w-3 stroke-[#a3c426]"></svg>
+        </div>
+
+        <div class="dropdown-panel absolute right-0 top-full mt-3 bg-black rounded-b-xl min-w-[250px]
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition p-3 z-50">
+            <a href="#" class="block py-2 px-3 hover:text-[#a3c426]">LTE</a>
+            <a href="#" class="block py-2 px-3 hover:text-[#a3c426]">فیبر نوری</a>
+            <a href="#" class="block py-2 px-3 hover:text-[#a3c426]">اینترنت 5G</a>
+            <a href="#" class="block py-2 px-3 hover:text-[#a3c426]">آیپی ثابت</a>
+        </div>
+    </div>
+
+    
+    <a href="https://mobinnet.ir/p/8005/huawei-pack" 
+       class="flex items-center gap-2 text-lg hover:text-[#a3c426] nav-item">
+
+        <img class="w-5" src="./assets/images/huwei.png">
+        محصولات Huawei
+    </a>
+
+    
+    <div class="relative group cursor-pointer nav-item">
+        <div class="flex items-center gap-2 group-hover:text-[#a3c426] transition">
+         
+<svg xmlns="http://www.w3.org/2000/svg" width="23.579" height="16.138" viewBox="0 0 23.579 16.138">
+  <g id="Group_4681" data-name="Group 4681" transform="translate(570.591 -264.969)">
+    <path id="Path_8613" data-name="Path 8613" d="M-389.709,326.326a3.773,3.773,0,0,0,.315-1.513,3.785,3.785,0,0,0-3.785-3.785,3.784,3.784,0,0,0-3.313,1.954" transform="translate(-161.774 -51.775)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_8614" data-name="Path 8614" d="M-514,355.224a3.771,3.771,0,0,0-.29,1.455,3.785,3.785,0,0,0,3.785,3.785,3.784,3.784,0,0,0,3.316-1.959" transform="translate(-52.003 -83.641)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_8615" data-name="Path 8615" d="M-444.07,271.152a7.572,7.572,0,0,0-7.332-5.683,7.569,7.569,0,0,0-7.569,7.569" transform="translate(-103.551)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_8616" data-name="Path 8616" d="M-331.858,409.967a7.577,7.577,0,0,0,6.241-5.6" transform="translate(-222.005 -129.438)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_8617" data-name="Path 8617" d="M-541.052,381.69a7.549,7.549,0,0,0,5.591,2.467,7.569,7.569,0,0,0,7.569-7.569" transform="translate(-27.061 -103.55)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_8618" data-name="Path 8618" d="M-563.932,267.394a7.571,7.571,0,0,0-6.159,7.438,7.585,7.585,0,0,0,.208,1.768" transform="translate(0 -1.794)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
+            <span class="text-lg">درباره مبین‌نت</span>
+            <svg class="w-3"></svg>
+        </div>
+
+        <div class="dropdown-panel absolute right-0 top-full mt-3 bg-black rounded-b-xl min-w-[250px]
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition p-3">
+            <a href="/p/5021" class="block py-2 px-3 hover:text-[#a3c426]">درباره مبیننت</a>
+            <a href="/p/3967" class="block py-2 px-3 hover:text-[#a3c426]">استخدام</a>
+            <a href="/p/3967" class="block py-2 px-3 hover:text-[#a3c426]">مسئولیت اجتماعی</a>
+            <a href="/p/4004" class="block py-2 px-3 hover:text-[#a3c426]">همگام در مسیر تعالی</a>
+            <a href="/p/5080" class="block py-2 px-3 hover:text-[#a3c426]">ارتباط با ما</a>
+            <a href="/p/5690" class="block py-2 px-3 hover:text-[#a3c426]">اخبار و مقالات</a>
+        </div>
+    </div>
+
+    
+    <div class="relative group cursor-pointer nav-item">
+        <div class="flex items-center gap-2 group-hover:text-[#a3c426] transition">
+           
+<svg xmlns="http://www.w3.org/2000/svg" width="16.176" height="17.193" viewBox="0 0 16.176 17.193">
+  <g id="Group_4674" data-name="Group 4674" transform="translate(294.921 41.631)">
+    <g id="Group_4672" data-name="Group 4672">
+      <path id="Path_8604" data-name="Path 8604" d="M-279.245-37.77H-284.3l-.53-3.36h4Z" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_8605" data-name="Path 8605" d="M-284.3-37.77h-5.059l.53-3.36h4Z" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_8606" data-name="Path 8606" d="M-289.363-37.77h-5.059l1.591-3.36h4Z" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <g id="Group_4673" data-name="Group 4673">
+      <path id="Rectangle_2681" data-name="Rectangle 2681" d="M0,0H5.059a0,0,0,0,1,0,0V.831A2.529,2.529,0,0,1,2.529,3.36h0A2.529,2.529,0,0,1,0,.831V0A0,0,0,0,1,0,0Z" transform="translate(-284.304 -37.77)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Rectangle_2682" data-name="Rectangle 2682" d="M0,0H5.059a0,0,0,0,1,0,0V.831A2.529,2.529,0,0,1,2.529,3.36h0A2.529,2.529,0,0,1,0,.831V0A0,0,0,0,1,0,0Z" transform="translate(-289.363 -37.77)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Rectangle_2683" data-name="Rectangle 2683" d="M0,0H5.059a0,0,0,0,1,0,0V.831A2.529,2.529,0,0,1,2.529,3.36h0A2.529,2.529,0,0,1,0,.831V0A0,0,0,0,1,0,0Z" transform="translate(-294.421 -37.77)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <path id="Path_8607" data-name="Path 8607" d="M-280.836-34.61v9.673H-292.83V-34.61" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_2684" data-name="Rectangle 2684" width="6.325" height="4.249" transform="translate(-289.996 -32.02)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
+
+            <span class="text-lg">عوامل فروش</span>
+            <svg class="w-3"></svg>
+        </div>
+
+        <div class="dropdown-panel absolute right-0 top-full mt-3 bg-black rounded-b-xl min-w-[250px]
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition p-3">
+            <a href="/p/5371" class="block py-2 px-3 hover:text-[#a3c426]">عوامل فروش اینترنت LTE</a>
+            <a href="/p/4980" class="block py-2 px-3 hover:text-[#a3c426]">درخواست عاملیت فروش</a>
+        </div>
+    </div>
+
+    
+    <div class="relative group cursor-pointer nav-item">
+        <div class="flex items-center gap-2 group-hover:text-[#a3c426] transition">
+           
+<svg xmlns="http://www.w3.org/2000/svg" width="19.47" height="19.527" viewBox="0 0 19.47 19.527">
+  <g id="Group_5146" data-name="Group 5146" transform="translate(-585.141 -1888.443)">
+    <g id="Live_chat" data-name="Live chat" transform="translate(585.641 1896.205)">
+      <g id="Group_5144" data-name="Group 5144" transform="translate(0)">
+        <path id="Path_9073" data-name="Path 9073" d="M588.591,1905.712h-1.022a1.925,1.925,0,0,0-1.928,1.928v2.571a1.925,1.925,0,0,0,1.928,1.928h.907" transform="translate(-585.641 -1905.712)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_5145" data-name="Group 5145" transform="translate(601.174 1896.205)">
+      <path id="Path_9074" data-name="Path 9074" d="M621.509,1912.138h1.009a1.925,1.925,0,0,0,1.928-1.928v-2.571a1.925,1.925,0,0,0-1.928-1.928h-1.009" transform="translate(-621.509 -1905.712)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <rect id="Rectangle_2746" data-name="Rectangle 2746" width="4.211" height="2.292" rx="1.146" transform="translate(592.79 1905.178)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_9075" data-name="Path 9075" d="M600.864,1906.324h1.38a2.8,2.8,0,0,0,2.8-2.806l-.01-8.284a6.291,6.291,0,0,0-6.292-6.291h0a6.291,6.291,0,0,0-6.291,6.291v7.4" transform="translate(-3.863 0)" fill="none" stroke="#a8a7ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
+            <span class="text-lg">پشتیبانی</span>
+            <svg class="w-3"></svg>
+
+        </div>
+
+        <div class="dropdown-panel absolute right-0 top-full mt-3 bg-black rounded-b-xl min-w-[250px]
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition p-3">
+            <a href="/p/4985" class="block py-2 px-3 hover:text-[#a3c426]">مرکز خدمات ۲۴ ساعته</a>
+            <a href="/p/4021" class="block py-2 px-3 hover:text-[#a3c426]">خدمات مشترکین</a>
+            <a href="/p/4997" class="block py-2 px-3 hover:text-[#a3c426]">اپلیکیشن مبین‌نت</a>
+            <a href="/p/3945" class="block py-2 px-3 hover:text-[#a3c426]">پرسشهای متداول</a>
+            <a href="/p/5013" class="block py-2 px-3 hover:text-[#a3c426]">صدای مشتری</a>
+            <a href="/p/5017" class="block py-2 px-3 hover:text-[#a3c426]">واریزی اشتباه</a>
+        </div>
+    </div>
+
+</nav>
+
+
+            
+            <a href="https://shop.mobinnet.ir/?product_type=td-lte-modem"
+               class="bg-[#a3c426] hover:bg-[#a6ce39] transition rounded-full px-8 h-[54px] flex items-center gap-3">
+                <img src="./assets/images/Icons.png" class="w-5">
+                <span class="hidden md:block text-lg font-medium text-black">فروشگاه</span>
+
+            </a>
+
+        </div>
+    </div>
+
+    
+    <div id="mobileMenu"
+         class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-50 hidden">
+
+        <div class="absolute top-0 right-0 w-64 h-full bg-[#111] p-5 overflow-y-auto">
+
+            <button id="closeMenu" class="text-white text-xl mb-6">×</button>
+
+            <ul class="space-y-4 text-white">
+
+                <li class="font-bold">اینترنت</li>
+                <li class="ml-4 text-gray-300">LTE</li>
+                <li class="ml-4 text-gray-300">فیبر نوری</li>
+                <li class="ml-4 text-gray-300">اینترنت 5G</li>
+                <li class="ml-4 text-gray-300">آیپی ثابت</li>
+
+                <li class="font-bold mt-6">محصولات Huawei</li>
+
+                <li class="font-bold mt-6">درباره مبین‌نت</li>
+                <li class="ml-4 text-gray-300">درباره مبین‌نت</li>
+                <li class="ml-4 text-gray-300">استخدام</li>
+                <li class="ml-4 text-gray-300">مسئولیت اجتماعی</li>
+
+                <li class="ml-4 text-gray-300">ارتباط با ما</li>
+
+                <li class="font-bold mt-6">عوامل فروش</li>
+                <li class="ml-4 text-gray-300">عوامل فروش LTE</li>
+
+                <li class="font-bold mt-6">پشتیبانی</li>
+                <li class="ml-4 text-gray-300">مرکز خدمات</li>
+                <li class="ml-4 text-gray-300">اپلیکیشن</li>
+
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<div class="top-banner relative overflow-hidden w-full" dir="rtl">
+    
+    <div 
+        class="h-[200px] md:h-[250px] lg:h-[300px] bg-cover bg-center" 
+
+        style="background-image: url('./assets/images/bannermobinnet.jpg');"
+    >
+        <div class="absolute inset-0 banner-gradient-overlay z-[1]"></div>
+    </div>
+
+
+    <div 
+        class="circle-sign-effect absolute bottom-0 left-0 w-80 h-80 md:w-96 md:h-96 transform translate-x-1/2 translate-y-1/2 hidden sm:block z-0"
+    >
+        </div>
+
+    <div class="content absolute inset-0 z-10 flex items-center p-4 text-white">
+        <div class="container mx-auto px-16">
+            <div class="flex flex-col text-right justify-center">
+                
+                <div class="title mb-2 md:mb-4 lg:mb-6">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold m-0 leading-tight tracking-tight header-font-override">
+                        درباره مبین‌نت
+                    </h1>
+                </div>
+                
+                <div class="subtitle">
+                    <p class="text-sm sm:text-lg lg:text-xl font-normal m-0 opacity-90 tracking-wide">
+                        شرکت ارتباطات مبین‌نت را بیشتر بشناسید
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div dir="rtl" class="bg-white  py-12 md:py-16 lg:py-24">
+    <div class="container mx-auto px-16 md:px-16 max-w-full">
+        <div class="flex flex-wrap justify-center">
+            
+            <div class="w-full">
+                
+                <div class="text-right mb-4">
+                    <p class="text-lg font-semibold m-0" style="color: #0c5753;">
+                        آشنایی با شرکت ارتباطات مبین‌نت 
+                    </p>
+                </div>
+                
+                <div class="text-right mb-6">
+                    <h3 class="text-3xl md:text-4xl font-extrabold m-0 header-font-override" style="color: #a7cd39;">
+                        تاریخچه مبین‌نت 
+
+                    </h3>
+                </div>
+                
+                <div class="text-lg text-right text-gray-700 leading-relaxed space-y-4">
+                    
+                    <p>
+                        شرکت ارتباطات مبین‌نت با هدف تبدیل شدن به انتخاب نخست مشتریان خدمات داده، ارتقای روزافزون سطح کیفی خدمات، با محوریت ارائه خدمات ارتباطی باندپهن بیسیم در مقیاس کشوری، در آذر ماه سال ۱۳۸۷ تأسیس شد.
+                        این شرکت موفق شد در دهم بهمن سال ۱۳۹۵، شبکه بیسیم سراسری خود را بر بستر فناوری TD-LTE راه اندازی کند.
+                        همگام با ارائه اینترنت خانگی طیف وسیعی از خدمات ارتباطی و اینترنتی سازمانی نیز مبین‌نت را به عنوان بزرگترین اپراتور بیسیم در حوزه خدمات سازمانی مطرح کرده است.
+                        راهاندازی یک مرکزداده مجهز این امکان را برای مبین‌نت ایجاد کرد تا بتواند در کنار ارائه اینترنت پرسرعت بیسیم ثابت (TD-LTE)، خدمات اینترنت اختصاصی، شبکه های گستردهی ارتباطی و اینترنت مدیریت شده، طیف وسیعی از خدمات مرکز داده نظیر سرورهای مجازی و اختصاصی را نیز ارائه کند.
+                        در سالهای اخیر خدمات مبتنی بر اینترنت اشیاء و رایانش ابری نیز به سبد محصولات مبین‌نت افزوده شده و خدمات یکپارچه ای را در حوزه های خدمات خانگی، اداری و سازمانی ایجاد کرده است.
+                        ارائه خدمات ارتباطی به چندین هزار Node سازمانی، خدمات هوشمند و مدیریت شده و بسیاری دیگر از راهکارهای ارزش افزوده، مبین‌نت را به انتخاب نخست سازمان ها، ارگان های دولتی و کسب وکارهای کوچک و بزرگ کشور تبدیل کرده است.
+                    </p>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div dir="rtl" class="bg-gray-100 py-12 md:py-20 lg:py-24">
+    
+    <div class="container mx-auto px-4 md:px-16 max-w-full">
+        
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16">
+            
+            <div class="w-full md:w-1/2 text-center">
+                
+                <h3 class="text-3xl md:text-4xl font-extrabold m-0 mb-8 header-font-override" style="color: #a7cd39;">
+                    مبین‌نت  در قاب دوربین
+                </h3>
+                
+                <div class="wysiwyg-editor-customize  text-center leading-relaxed space-y-4 font-normal override-bold">
+                    <p class="text-center">
+                 مبین نت در سال ۱۳۹۷ دهسالگی فعالیت خود را جشن گرفت.  در این ویدیو تلاش های مبین‌نت برای ارائه خدمات به مشترکین خانگی و مشتریان سازمانی را مشاهده میکنید.  مبین‌نت با تکیه بر فناوری TD-LTE، شبکه بیسیم سراسری، لینک های رادیویی و مرکزداده مجهز خود طیف وسیعی از خدمات ارتباطی، اینترنتی، دیجیتال و مرکزداده را ارائه میکند.
+                    </p>
+                </div>
+                
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                
+                <div class="relative overflow-hidden pt-[56.25%]">
+                    
+                    <video 
+
+                        class="absolute top-0 right-0 w-full h-full rounded-lg shadow-xl"
+                        controls 
+                        poster="پوستر ویدئو (اختیاری)"
+                    >
+                        <source type="video/mp4" src="./assets/images/Mobinnet-Clip-V6.mp4" />
+                        مرورگر شما از تگ ویدئو پشتیبانی نمیکند.
+                    </video>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div dir="rtl" 
+     id="section-scroll3" 
+     class="main-sections white-section py-20 md:py-32" 
+     style="background-image: url(./assets/images/section-bg-1.jpg); background-size: cover; background-position: center;">
+    
+    <div class="container mx-auto px-4 md:px-16 max-w-7xl">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl  font-extrabold header-font-override" style="color: #a7cd39;">
+                نشریات مبین‌نت
+            </h2>
+        </div>
+        
+        <div class="grid grid-cols-2  sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 justify-center">
+            
+            <a href="لینک کارت ۱" 
+               class="block text-center group 
+                      transition duration-300 ease-in-out transform hover:-translate-y-2">
+                
+                <img src="./assets/images/File.aspx_-3.png" alt="نشریه شماره ۱" 
+                     class="w-full h-auto object-cover mb-2 
+                            shadow-[0_15px_25px_-10px_rgb(0, 0, 0, 0.8)]  group-hover:shadow-[0_20px_35px_-10px_rgb(0, 0, 0, 1)]">
+                
+                <div class="p-2">
+                    <span class="font-bold text-lg text-white">نشریه شماره۱ </span>
+                </div>
+            </a>
+
+            
+            <a href="لینک کارت ۲" 
+               class="block text-center group 
+                      transition duration-300 ease-in-out transform hover:-translate-y-2">
+                <img src="./assets/images/File.aspx2_-1.png" alt="نشریه شماره ۲ " 
+                     class="w-full h-auto object-cover mb-2 
+                            shadow-[0_15px_25px_-10px_rgb(0, 0, 0, 0.8)]  group-hover:shadow-[0_20px_35px_-10px_rgb(0, 0, 0, 1)]">
+                <div class="p-2">
+                    <span class="font-bold text-lg text-white">نشریه شماره ۲ </span>
+                </div>
+            </a>
+            
+            <a href="لینک کارت ۳" 
+               class="block text-center group 
+
+                      transition duration-300 ease-in-out transform hover:-translate-y-2">
+                <img src="./assets/images/File.aspx3_-1.png" alt="نشریه شماره ۳" 
+                     class="w-full h-auto object-cover mb-2 
+                           shadow-[0_15px_25px_-10px_rgb(0, 0, 0, 0.8)]  group-hover:shadow-[0_20px_35px_-10px_rgb(0, 0, 0, 1)]">
+                <div class="p-2">
+                    <span class="font-bold text-lg text-white">نشریه شماره ۳</span>
+                </div>
+            </a>
+
+            <a href="لینک کارت ۴" 
+               class="block text-center group 
+                      transition duration-300 ease-in-out transform hover:-translate-y-2">
+                <img src="./assets/images/File.aspx4_.png" alt="نشریه شماره ۴" 
+                     class="w-full h-auto object-cover mb-2 
+                            shadow-[0_15px_25px_-10px_rgb(0, 0, 0, 0.8)]  group-hover:shadow-[0_20px_35px_-10px_rgb(0, 0, 0, 1)]">
+                <div class="p-2">
+                    <span class="font-bold text-lg text-white">نشریه شماره ۴</span>
+                </div>
+            </a>
+
+            <a href="لینک کارت ۵" 
+               class="block text-center group 
+                      transition duration-300 ease-in-out transform hover:-translate-y-2">
+                <img src="./assets/images/File.aspx5_-1.png" alt="نشریه شماره ۵" 
+                     class="w-full h-auto object-cover mb-2 
+                           shadow-[0_15px_25px_-10px_rgb(0, 0, 0, 0.8)]  group-hover:shadow-[0_20px_35px_-10px_rgb(0, 0, 0, 1)]">
+                <div class="p-2">
+                    <span class="font-bold text-lg text-white">نشریه شماره ۵</span>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+  <section class="relative bg-white py-20 ">
+    <div class="max-w-6xl mx-auto px-6">
+    
+      <div class="text-center mb-10 ">
+        <h1 class="title-stroke text-3xl md:text-4xl lg:text-5xl leading-tight header-font-override" style="color: #a7cd39";>دریافت لوگو شرکت ارتباطات مبیننت</h1>
+        <p class="mt-5 text-gray-500 max-w-2xl mx-auto">در صورتیکه به دریافت لوگوهای رسمی شرکت ارتباطات مبین‌نت احتیاج دارید میتوانید آنها را 
+
+از بخش زیر دانلود کنید.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16 ">
+        
+        <a href="#" class="card-square card-square-fallback mobinnet-card border border-gray-200  overflow-hidden flex items-center justify-center card-hover-effect card-border-hover transition" >
+          <div class="card-content p-6 flex flex-col items-center justify-center text-center">
+            
+            <img src="./assets/images/File.aspx6_-1.png" alt="لوگو 1" class="w-36 h-36 object-contain mb-4">
+            
+            <div class="text-sm text-emerald-900 font-semibold">لوگو فاسی (شماره 1)</div>
+          </div>
+        </a>
+
+        <a href="#" class="card-square card-square-fallback mobinnet-card border border-gray-200 overflow-hidden flex items-center justify-center card-hover-effect card-border-hover transition" >
+          <div class="card-content p-6 flex flex-col items-center justify-center text-center">
+            <img src="./assets/images/File.aspx7_.png" alt="لوگو 2" class="w-36 h-36 object-contain mb-4">
+            <div class="text-sm text-emerald-900 font-semibold">لوگو فارسی (شماره 2)</div>
+          </div>
+        </a>
+
+        <a href="#" class="card-square card-square-fallback mobinnet-card border border-gray-200  overflow-hidden flex items-center justify-center card-hover-effect card-border-hover transition" >
+          <div class="card-content p-6 flex flex-col items-center justify-center text-center">
+            <img src="./assets/images/File.aspx8_.png" alt="لوگو 3" class="w-36 h-36 object-contain mb-4">
+            <div class="text-sm text-emerald-900 font-semibold">لوگو انگلیسی (شماره 1)</div>
+          </div>
+
+        </a>
+
+        <a href="#" class="card-square card-square-fallback mobinnet-card border border-gray-200  overflow-hidden flex items-center justify-center card-hover-effect card-border-hover transition" >
+          <div class="card-content p-6 flex flex-col items-center justify-center text-center">
+            <img src="./assets/images/File.aspx9_.png" alt="لوگو 4" class="w-36 h-36 object-contain mb-4">
+            <div class="text-sm text-emerald-900 font-semibold">لوگو انگلیسی (شماره 2)</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+<footer dir="rtl" class="relative bg-[#262626] text-white mt-[200px]! pt-24 pb-8 md:pt-32 md:pb-12">
+    
+    <div class="absolute left-1/2 transform -translate-x-1/2 z-30" style="top: -35px;">
+        
+        <a href="لینک دکمه مرکزی" 
+           class="flex items-center justify-center w-[70px] h-[70px] rounded-lg 
+                  bg-gradient-to-r from-[#9acc3a] to-[#11b24b] 
+                  shadow-xl hover:shadow-2xl transition duration-300">
+           
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30.2061 14.7422V13.1827L29.0891 14.7422H30.2061Z" fill="white"/>
+<path d="M46.615 6.18475H19.952C19.3624 6.18475 18.8845 6.66263 18.8845 7.2522V20.0021C18.8845 20.5916 19.3624 21.0695 19.952 21.0695H26.2186V25.2439C26.2186 25.7002 26.7392 25.961 27.1048 25.6881L33.2835 21.0695H46.615C47.2046 21.0695 47.6825 20.5916 47.6825 20.0021V7.2522C47.6825 6.66263 47.2046 6.18475 46.615 6.18475ZM25.883 17.4193H22.9773C22.6812 17.4193 22.4104 17.2544 22.275 16.991C22.1396 16.728 22.1617 16.4114 22.3334 16.1706L24.9836 12.4446C25.1744 12.1764 25.0685 11.9077 25.0316 11.8318C24.9878 11.7417 24.8535 11.5299 24.5611 11.5167H24.5595C24.1069 11.5167 23.7676 11.8566 23.7676 12.2744C23.7676 12.7112 23.4141 13.0647 22.9773 13.0647C22.5405 13.0647 22.187 12.7112 22.187 12.2744C22.187 10.9846 23.236 9.93558 24.5258 9.93558L24.6317 9.93768C25.4225 9.97351 26.1032 10.4224 26.4526 11.139C26.8035 11.8592 26.7344 12.7101 26.2718 13.3608L24.5089 15.8382H25.8825C26.3187 15.8382 26.6728 16.1917 26.6728 16.6285C26.6728 17.0652 26.3193 17.4193 25.883 17.4193ZM32.1012 16.3224H31.7877V16.629C31.7877 17.0658 31.4336 17.4193 30.9974 17.4193C30.5611 17.4193 30.2071 17.0658 30.2071 16.629V16.3224H27.55C27.2534 16.3224 26.9826 16.1569 26.8472 15.893C26.7118 15.629 26.735 15.3118 26.9078 15.071L30.3551 10.2649C30.5553 9.98563 30.9131 9.86919 31.2392 9.97298C31.5659 10.0784 31.7877 10.3824 31.7877 10.7254V14.7412H32.1012C32.5374 14.7412 32.8915 15.0947 32.8915 15.5315C32.8915 15.9683 32.5374 16.3224 32.1012 16.3224ZM39.3141 9.86339L34.3704 18.2908C34.2234 18.5416 33.9595 18.6812 33.6881 18.6812C33.5522 18.6812 33.4142 18.6464 33.2888 18.5726C32.912 18.3519 32.7861 17.8677 33.0069 17.491L37.9505 9.0636C38.1713 8.68741 38.656 8.56201 39.0322 8.78172C39.4089 9.00301 39.5349 9.48721 39.3141 9.86339ZM44.8637 11.1258L41.4011 17.0289C41.2541 17.2797 40.9901 17.4193 40.7187 17.4193C40.5828 17.4193 40.4448 17.3845 40.3194 17.3108C39.9427 17.09 39.8167 16.6058 40.0375 16.2291L42.802 11.5162H40.7193C40.283 11.5162 39.929 11.1627 39.929 10.7259C39.929 10.2891 40.283 9.93558 40.7193 9.93558H44.1819C44.4654 9.93558 44.7267 10.0873 44.8679 10.3328C45.0091 10.5789 45.007 10.8813 44.8637 11.1258Z" fill="white"/>
+<path opacity="0.4" d="M13.5776 27.9275L17.3848 31.7347C17.7257 32.0756 18.2496 32.1523 18.6746 31.9251L23.2374 29.4755C23.5753 29.294 23.9826 29.3028 24.3116 29.4991L30.9684 33.4495C31.4436 33.7313 31.6339 34.3201 31.4126 34.8263C30.8444 36.1204 29.8085 38.4933 29.3968 39.5425C29.3097 39.7639 29.1814 39.966 29.0028 40.121C24.5655 43.9666 15.7395 39.2813 8.98237 32.5242C2.22527 25.7671 -2.45999 16.9396 1.38561 12.5038C1.54056 12.3237 1.74273 12.1954 1.96408 12.1083C3.0118 11.6981 5.38616 10.6621 6.68032 10.0925C7.18648 9.8697 7.77527 10.0615 8.05713 10.5367L12.0075 17.1935C12.2023 17.5225 12.2111 17.9313 12.0311 18.2677L9.58149 22.8305C9.35424 23.2555 9.43098 23.7794 9.77186 24.1203L13.5776 27.9275Z" fill="black"/>
+</svg>
+ 
+
+        </a>
+        
+    </div>
+    
+    <div class="absolute top-0 left-0 w-full z-20" style="top: -94px;"> 
+        
+        <svg version="1.1" class="w-full h-auto block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2511.5 157.9" preserveAspectRatio="none">
+            <path style="fill: #262626;" d="M1221,158C473.5,158,0,0,0,0v157.9h2511.5V0C2511.5,0,1968.5,158,1221,158z"/>
+        </svg>
+
+    </div>
+    
+    <div class="container mx-auto px-4 md:px-16 max-w-7xl text-center relative z-20">
+
+        
+        <h3 class="text-2xl md:text-2xl font-bold text-white mb-16">
+            هر روز هفته، ۲۴ ساعته در کنار شما هستیم
+        </h3>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
+            
+            <a href="tel:021xxxxxxxx" class="vibrate-on-hover hover:text-[#0c5753] w-full md:w-auto flex items-center justify-center px-8 py-3 rounded-full text-lg font-bold text-white whitespace-nowrap bg-gradient-to-r from-[#9acc3a] to-[#11b24b] shadow-lg transition duration-300">
+                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1v3c0 .55-.45 1-1 1C10.75 22 2 13.25 2 3.5c0-.55.45-1 1-1h3c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.75-.25 1.02l-2.2 2.2z"/></svg>
+                <span> مرکز تماس 1575 </span>
+            </a>
+            
+            <a href="لینک پشتیبانی" class="vibrate-on-hover hover:text-[#0c5753] w-full md:w-auto flex items-center justify-center px-8 py-3 rounded-full text-lg font-bold text-white whitespace-nowrap bg-gradient-to-r from-[#9acc3a] to-[#11b24b] shadow-lg transition duration-300">
+                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                <span>سامانه صدای مشتری</span>
+            </a>
+        </div>
+        
+        
+
+        </div>
+    </div>
+    
+<div dir="rtl" 
+     class="w-full h-[107px] bg-gradient-to-r from-[#9acc3a] to-[#11b24b] 
+            flex items-center justify-center relative z-40 shadow-xl">
+    
+    <div class="container mx-auto   px-16 flex items-center justify-between h-full">
+        
+        <div class="text-white flex flex-col justify-center  py-2">
+            <h4 class="text-base md:text-xl font-bold mb-1 whitespace-nowrap">
+                یک ارتباط خاص با شما
+            </h4>
+            <p class="text-sm md:text-base opacity-90 whitespace-nowrap hidden md:block">
+                ما را در شبکه های اجتماعی دنبال کنید تا از جشنواره ها، تخفیف ها و اخبار مطلع شوید.
+
+            </p>
+        </div>
+        
+        <div class="flex space-x-3 space-x-reverse">
+            
+            <a href="لینک توییتر" target="_blank" 
+               class="flex items-center justify-center w-10 h-10 rounded-full 
+                      border border-white border-opacity-70 text-white 
+                      hover:bg-white hover:text-[#609918] transition duration-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.73.33-1.54.55-2.37.66.8-.48 1.4-1.24 1.7-2.15-.75.45-1.58.78-2.46.96-.7-1.1-1.88-1.78-3.1-1.78-2.36 0-4.28 1.9-4.28 4.25 0 .33.04.66.12.98-3.56-.18-6.72-1.88-8.83-4.48-.38.65-.58 1.35-.58 2.1 0 1.47.75 2.76 1.9 3.52-.7-.02-1.4-.2-2-.5v.05c0 2.05 1.46 3.76 3.4 4.14-.36.1-.73.14-1.12.14-.27 0-.53-.02-.78-.07.54 1.7 2.1 2.92 3.96 2.95-1.44 1.14-3.2 1.83-5.14 1.83-.34 0-.67-.02-1-.06 1.86 1.17 4.07 1.85 6.45 1.85 7.74 0 11.96-6.32 11.96-11.85 0-.18-.0-.37-.01-.55.8-.57 1.48-1.28 2.04-2.09z"/></svg>
+            </a>
+            
+            <a href="لینک اینستاگرام" target="_blank" 
+               class="flex items-center justify-center w-10 h-10 rounded-full 
+                      border border-white border-opacity-70 text-white 
+                      hover:bg-white hover:text-[#609918] transition duration-300">
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.65 2 20 4.35 20 6.6v8.8c0 2.25-2.35 4.6-4.9 4.6H7.8C5.15 20 3 17.65 3 15.4V6.6C3 4.35 5.35 2 7.8 2zm-.2 14.8c0 1.34 1.1 2.4 2.4 2.4h5.6c1.3 0 2.4-1.1 2.4-2.4V9.6c0-1.34-1.1-2.4-2.4-2.4h-5.6c-1.3 0-2.4 1.1-2.4 2.4v7.2zm7.2-12.8h2.4v2.4h-2.4zM12 9c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM12 17c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+            </a>
+            
+            <a href="لینک آپارات" target="_blank" 
+               class="flex items-center justify-center w-10 h-10 rounded-full 
+                      border border-white border-opacity-70 text-white 
+                      hover:bg-white hover:text-[#609918] transition duration-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5v10zM19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+            </a>
+            
+            <a href="لینک لینکدین" target="_blank" 
+               class="flex items-center justify-center w-10 h-10 rounded-full 
+                      border border-white border-opacity-70 text-white 
+                      hover:bg-white hover:text-[#609918] transition duration-300">
+                <svg class="w-5 h-5" 
+
+fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.551v-5.613c0-1.332-.472-2.244-1.668-2.244-.91 0-1.455.61-1.696 1.201-.086.208-.109.497-.109.789v5.867h-3.548s.047-9.67 0-10.64h3.548v1.545h.02c.492-.857 1.365-1.748 3.161-1.748 2.246 0 3.961 1.488 3.961 4.67v6.184zM3.931 7.205c-1.29 0-2.336-1.045-2.336-2.336 0-1.291 1.046-2.336 2.336-2.336 1.29 0 2.336 1.045 2.336 2.336 0 1.291-1.046 2.336-2.336 2.336zm-1.77 13.247h3.54V9.809h-3.54v10.643z"/></svg>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="container mx-auto  px-16 relative z-20 pt-16 mt-8">
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-gray-700 pt-12">
+        
+        <div>
+            <h5 class="text-xl font-extrabold text-white mb-6 whitespace-nowrap">
+                ارتباط با پشتیبانی
+            </h5>
+            <ul class="space-y-3">
+                <li>
+                    <a href="لینک-لینک-۱" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">صفحه مشترکین  </a>
+                </li>
+                <li>
+
+                    <a href="لینک-لینک-۲" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">پرسش‌های متداول</a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۳" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">  مرکز خدمات ۲۴ ساعته</a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۴" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">ارتباط با ما</a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۴" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">اپلیکیشن مبین‌نت</a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۴" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">آشنایی با رگولاتوری</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+
+            <h5 class="text-xl font-extrabold text-white mb-6 whitespace-nowrap">
+                خدمات LTE
+            </h5>
+            <ul class="space-y-3">
+                <li>
+                    <a href="لینک-لینک-۵" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">اینترنت LTE</a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۶" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">اینترنت فیبر نوری</a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۷" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">اینترنت برج و مجتمع </a>
+                </li>
+                <li>
+                    <a href="لینک-لینک-۸" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">اینترنت پر سرعت </a>
+                </li>
+                  <li>
+                    <a href="لینک-لینک-۸" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">مناطق تحت پوشش  </a>
+                </li>
+                  <li>
+                    <a href="لینک-لینک-۸" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">طرح‌ها و تعرفه‌ها  </a>
+                </li>
+                  <li>
+                    <a href="لینک-لینک-۸" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">فهرست عوامل فروش </a>
+                </li>
+                  <li>
+                    <a href="لینک-لینک-۸" class="text-gray-400 hover:text-[#a7cd39] transition duration-300">آی پی  ثابت  </a>
+                </li>
+            </ul>
+        </div>
+            <div class="col-span-2 md:col-span-1 flex flex-col items-start md:items-end space-y-8 ml-4 mt-4 md:mt-0 ">
+            
+            <a href="لینک-دکمه-تکی" 
+               class=" w-full md:w-auto flex items-center justify-center px-8 py-3 rounded-full 
+                      text-lg font-bold text-white whitespace-nowrap
+                      bg-gradient-to-r from-[#9acc3a] to-[#11b24b] 
+                      shadow-lg transition duration-300 hover:shadow-2xl vibrate-on-hover hover:text-[#0c5753] mb-4 md:mb-0">
+                
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M38.2607 14.2222C38.8 15.0293 38.8 16.1529 38.8 18.4V38.8H39.6C40.2628 38.8 40.8 39.3373 40.8 40C40.8 40.6628 40.2628 41.2 39.6 41.2H7.60002C6.93728 41.2 6.40002 40.6628 6.40002 40C6.40002 39.3373 6.93728 38.8 7.60002 38.8H8.40002V18.4C8.40002 16.1529 8.40002 15.0293 8.93932 14.2222C9.17279 13.8728 9.47279 13.5728 9.8222 13.3393C10.5282 12.8676 13.881 12.8085 15.6113 12.8011C15.6047 13.2673 15.6047 13.7545 15.6048 14.2568L15.6048 14.4V16.4H11.6C10.9373 16.4 10.4 16.9373 10.4 17.6C10.4 18.2628 10.9373 18.8 11.6 18.8H15.6048V21.2H11.6C10.9373 21.2 10.4 21.7373 10.4 22.4C10.4 23.0628 10.9373 23.6 11.6 23.6H15.6048V26H11.6C10.9373 26 10.4 26.5373 10.4 27.2C10.4 27.8628 10.9373 28.4 11.6 28.4H15.6048V38.8H31.6047V28.4H35.6C36.2628 28.4 36.8 27.8628 36.8 27.2C36.8 26.5373 36.2628 26 35.6 26H31.6047V23.6H35.6C36.2628 23.6 36.8 23.0628 36.8 22.4C36.8 21.7373 36.2628 21.2 35.6 21.2H31.6047V18.8H35.6C36.2628 18.8 36.8 18.2628 36.8 17.6C36.8 16.9373 36.2628 16.4 35.6 16.4H31.6047V14.4L31.6047 14.2568C31.6048 13.7545 31.6048 13.2673 31.5983 12.8011C33.3285 12.8085 36.6719 12.8676 37.3779 13.3393C37.7273 13.5728 38.0273 13.8728 38.2607 14.2222Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 8H25.2C28.217 8 29.7255 8 30.6628 8.93726C31.6 9.87452 31.6 11.383 31.6 14.4V38.8H34H38.8H39.6C40.2628 38.8 40.8 39.3373 40.8 40C40.8 40.6627 40.2628 41.2 39.6 41.2H7.60002C6.93728 41.2 6.40002 40.6627 6.40002 40C6.40002 39.3373 6.93728 38.8 7.60002 38.8H8.40002H13.2H15.6V14.4C15.6 11.383 15.6 9.87452 16.5373 8.93726C17.4745 8 18.983 8 22 8ZM23.6 34C24.2628 34 24.8 34.5373 24.8 35.2V38.8H22.4V35.2C22.4 34.5373 22.9373 34 23.6 34ZM20.4 27.2C19.7373 27.2 19.2 27.7373 19.2 28.4C19.2 29.0627 19.7373 29.6 20.4 29.6H26.8C27.4628 29.6 28 29.0627 28 28.4C28 27.7373 27.4628 27.2 26.8 27.2H20.4ZM19.2 23.6C19.2 22.9373 19.7373 22.4 20.4 22.4H26.8C27.4628 22.4 28 22.9373 28 23.6C28 24.2627 27.4628 24.8 26.8 24.8H20.4C19.7373 24.8 19.2 24.2627 19.2 23.6ZM20.4 18.4C19.7373 18.4 19.2 18.9373 19.2 19.6C19.2 20.2627 19.7373 20.8 20.4 20.8H26.8C27.4628 20.8 28 20.2627 28 19.6C28 18.9373 27.4628 18.4 26.8 18.4H20.4ZM19.2 14.8C19.2 14.1373 19.7373 13.6 20.4 13.6H26.8C27.4628 13.6 28 14.1373 28 14.8C28 15.4627 27.4628 16 26.8 16H20.4C19.7373 16 19.2 15.4627 19.2 14.8Z" fill="white"/>
+</svg>
+
+                
+                <span>خدمات سازمانی</span> </a>
+
+           
+
+        </div>
+   <div class="flex space-x-4 space-x-reverse justify-start md:justify-end w-full md:w-auto">
+                <a href="لینک-عکس-۱" target="_blank" class="block">
+                    <img src="./assets/images/bottom-footer-195.png" alt="عکس لوگوی ۱" class="w-16 h-auto opacity-80 hover:opacity-100 transition duration-300">
+                </a>
+                <a href="لینک-عکس-۲" target="_blank" class="block">
+                    <img src="./assets/images/bottom-footer-namad.png" alt="عکس لوگوی ۲" class="w-16 h-auto opacity-80 hover:opacity-100 transition duration-300">
+                </a>
+            </div>
+
+    </div>
+    
+    
+    
+    <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+        <p class="text-xs text-gray-500">
+            شرکت ارتباطات مبین‌نت، دارنده پروانه یکپارچه شبکه و خدمات ارتباطی (UNSP) با شماره 19-130-100 از سازمان تنظیم مقررات و ارتباطات رادیویی
+        </p>
+    </div>
+</div>
+
+</footer>
+
+
+<a href="لینک گفتگو" 
+   target="_blank" 
+   class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[9999] 
+          flex items-center justify-center 
+          w-14 h-14 rounded-full 
+          bg-gradient-to-r from-[#88c541] to-[#609918] 
+          shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
+    
+    <svg fill="currentColor" viewBox="0 0 16 16" class="w-7 h-7 text-white">
+        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72"></path>
+    </svg>
+    
+</a>
+
+</body>
+</html>
+

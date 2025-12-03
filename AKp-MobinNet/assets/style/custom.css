@@ -1,0 +1,173 @@
+
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding-bottom: 0;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #a3c426;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+
+.dropdown-panel {
+    pointer-events: auto;
+}
+
+.dropdown-panel a {
+    pointer-events: auto;
+    display: block;
+}
+
+.dropdown-panel {
+
+    transform: translateY(4px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+}
+
+.nav-item:hover> .dropdown-panel,
+.dropdown-panel:hover {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item svg {
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover svg {
+    transform: rotate(180deg);
+}
+
+    .platforms li a.active::after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: #a3c426;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -19px;
+        }
+
+.circle-sign-effect {
+    
+    background-image: url('../images/icons8-mind-map-80.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    animation: rotate-circle 15s linear infinite;
+}
+
+@keyframes rotate-circle {
+    
+    from {
+
+        transform: translate(50%, 50%) rotate(0deg); 
+    }
+   
+    to {
+        transform: translate(50%, 50%) rotate(360deg); 
+    }
+}
+
+.banner-gradient-overlay {
+    background-image: linear-gradient(to right,rgb(167, 205, 57, 0.5), rgb(12, 87, 83, 0.5));
+
+}
+.header-font-override{
+    font-family: "Vazirmatn-Bold" !important;
+}
+
+   
+    :root{
+      --brand-green: #8BC43F;
+      --brand-green-dark: #55A70F;
+      --footer-bg: #333435; 
+    }
+
+
+  
+    @keyframes vibrate {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-2px); }
+      40% { transform: translateX(2px); }
+      60% { transform: translateX(-1px); }
+      80% { transform: translateX(1px); }
+      100% { transform: translateX(0); }
+    }
+    .vibrate-on-hover:hover { animation: vibrate .32s linear; }
+
+   
+    .card-hover-effect { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .card-hover-effect:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+
+   
+
+.card-border-hover {
+  position: relative;          
+  overflow: visible;             
+  border: 1px solid #e5e5e5       
+  background-clip: padding-box;   
+}
+
+.card-border-hover::before {
+  content: "";
+  position: absolute;
+  inset:0;                       
+  border-radius: inherit;         
+
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 8px solid var(--brand-green);
+  opacity: 0;
+  transform: scale(1.18);        
+  transition:
+    transform 320ms cubic-bezier(.2,.9,.26,1),
+    opacity 220ms cubic-bezier(.2,.9,.26,1),
+    box-shadow 320ms cubic-bezier(.2,.9,.26,1);
+
+ 
+  box-shadow: 0 10px 30px rgba(139,196,63,0.08);
+
+  mix-blend-mode: normal;
+  backdrop-filter: blur(0px);
+}
+
+
+.card-border-hover:hover::before {
+  opacity: 1;
+  transform: scale(1);            
+  box-shadow: 0 14px 40px rgba(139,196,63,0.12);
+}
+
+    .card-square { aspect-ratio: 1 / 1; } 
+    .card-square-fallback { position: relative; }
+    .card-square-fallback > .card-content { position: absolute; inset: 0; }
+
+  
+    @media (max-width: 640px) {
+
+      .logos-section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+    }
+
