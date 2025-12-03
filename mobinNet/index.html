@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobinNet</title>
+    <script src="tailwind.js"></script>
+</head>
+<body dir="rtl">
+    <style>
+@font-face {
+  font-family: iranSans;
+  src: url("assets/fonts/IRANSansWeb.woff");
+}
+
+html,
+body {
+  font-family: "iranSans";
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:15px ;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+    </style>
+
+
+
+
+    <!-- header -->
+     <section class="blank">
+        <div class="bg-black w-full h-[50px]"></div>
+     </section>
+     <section class="main-header bg-[#262626] flex items-center justify-center">
+        <header>
+            <nav>
+                <ul class="flex gap-[40px] py-[50px]">
+                    <li><a href="#">
+                        <img src="assets/img/top-logo-fa.png" alt="logo">
+                        </a></li>
+
+
+
+
+
+                        <li class="dropdown relative">
+                            <a href="#" class="hover:text-[#a3c426] text-[20px] text-white">
+                            <div class="flex items-center gap-[10px]">
+                                <img src="assets/img/internet.svg" alt="huawei" class="h-[15px] w-[20px]">
+                            اینترنت
+                            </div>
+                        </a>
+                        <div class="dropdown-content absolute hidden bg-white mt-2 shadow z-50">
+                          <a href="#">LTE</a>
+                          <a href="#">فیبر نوری</a>
+                          <a href="#">اینترنت 5G</a>
+                          <a href="#">ایپی ثابت</a>
+                        </div>
+                        </li>
+                        <li><a href="#" class="hover:text-[#a3c426] text-[20px] text-white">
+                            <div class="flex items-center gap-[10px]">
+                                <img src="assets/img/Group-4681.svg" alt="huawei" class="h-[15px] w-[20px]">
+                                محصولات huawei
+                            </div>
+                         </a>
+                        </li>
+                        <li class="dropdown relative"><a href="#" class="hover:text-[#a3c426] text-[20px] text-white">
+                                <div class="flex items-center gap-[10px]">
+                                <img src="assets/img/Icons.png" alt="huawei" class="h-[15px] w-[20px]">
+                                 درباره ی مبین نت
+                                 </div>
+                        </a>
+                                 <div class="dropdown-content absolute hidden bg-white mt-2 shadow z-50">
+                          <a href="#">درباره مبین نت</a>
+                          <a href="#">استخدام</a>
+                          <a href="#">مسیولیت اجتماعی</a>
+                          <a href="#">همگام در مسیر تعالی</a>
+                          <a href="#">ارتباط با ما</a>
+                          <a href="#">اخبار و مقالات</a>
+                        </div>
+                    </li>
+                        <li class="dropdown relative"><a href="#" class="hover:text-[#a3c426] text-[20px] text-white">
+                            <div class="flex items-center gap-[10px]">
+                                <img src="assets/img/avamele-furush.svg" alt="huawei" class="h-[15px] w-[20px]">
+                            عوامل فروش
+                            </div>
+                        </a>
+                                 <div class="dropdown-content absolute hidden bg-white mt-2 shadow z-50">
+                          <a href="#">عوامل فروش اینترنت LTE</a>
+                          <a href="#">درخواست عاملیت فروش</a>
+                        </div>
+                    </li>
+                        <li class="dropdown relative"><a href="#" class="hover:text-[#a3c426] text-[20px] text-white">
+                            <div class="flex items-center gap-[10px]">
+                                <img src="assets/img/Group-5146.svg" alt="huawei" class="h-[15px] w-[20px]">
+                            پشتیبانی
+                            </div>
+                        </a>
+                                 <div class="dropdown-content absolute hidden bg-white mt-2 shadow z-50">
+                          <a href="#">مرکز خدمات 24 ساعته</a>
+                          <a href="#">خدمات مشترکین</a>
+                          <a href="#">اپلیکیشن مبین نت</a>
+                          <a href="#">پرسش های متداول</a>
+                          <a href="#">صدای مشتری </a>
+                          <a href="#">واریز اشتباه</a>
+                        </div>
+                    </li>
+                        <!-- button -->
+                        <li><a href="#">
+                            <div class="flex items-center gap-[10px] bg-[#a3c426] hover:brightness-110 text-[20px] px-[10px] rounded-[50px]">
+                                <img src="assets/img/Icons (1).png" alt="huawei" class="h-[15px] w-[20px]">  
+                            فروشگاه
+                            </div>
+                        </a></li>
+                    </ul>
+                </nav>
+            </header>
+     </section>
+<!-- about mobinnet -->
+     <section class="about">
+        <div class="relative flex ">
+            <img src="assets/img/File.aspx7_.jpg" alt="idk" class="w-full">
+            <div class="absolute text-white mr-[151px] top-0 right-0 h-full flex flex-col justify-center">
+                <h1 class="text-[50px] font-bold">درباره مبین نت</h1>
+                <p class="text-[30px]">شرکت ارتباطات مبین نت را بیشتر بشناسید</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- mobinnet history -->
+      <section class="mt-[100px]">
+            <p class="text-[20px] mr-[151px] text-[#0c5753]">آشنایی با شرکت ارتباطات مبین‌نت</p>
+            <h1 class="text-[40px] mr-[151px] text-[#a7cd39] font-bold m-[10px]">تاریخچه‌ مبین‌نت</h1>
+            <div class="w-full  flex justify-center">
+                <p class="text-[20px] w-[80%] text-justify text-[#888888]">شرکت ارتباطات مبین‌نت با هدف تبدیل شدن به انتخاب نخست مشتریان خدمات داده، ارتقای روزافزون سطح کیفی خدمات، با محوریت ارائه‌ خدمات ارتباطی باندپهن بی‌سیم در مقیاس کشوری، در آذر ماه سال ۱۳۸۷ تأسیس شد. این شرکت موفق شد در دهم بهمن سال ۱۳۹۵، شبکه بی‌سیم سراسری خود را بر بستر فناوری TD-LTE راه‌اندازی کند. همگام با ارائه اینترنت خانگی طیف وسیعی از خدمات ارتباطی و اینترنتی سازمانی نیز مبین‌نت را به‌عنوان بزرگترین اپراتور بی‌سیم در حوزه خدمات سازمانی مطرح کرده است. راه‌اندازی یک مرکزداده‌ مجهز این امکان را برای مبین‌نت ایجاد کرد تا بتواند در کنار ارائه‌ اینترنت پرسرعت بی‌سیم ثابت (TD-LTE)، خدمات اینترنت اختصاصی، شبکه‌های گسترده‌ی ارتباطی و اینترنت مدیریت شده، طیف وسیعی از خدمات مرکز داده نظیر سرورهای مجازی و اختصاصی را نیز ارائه کند. در سال‌های اخیر خدمات مبتنی‌بر اینترنت اشیاء و رایانش ابری نیز به سبد محصولات مبین‌نت افزوده شده و خدمات یکپارچه‌ای را در حوزه‌های خدمات خانگی، اداری و سازمانی ایجاد کرده است <br> ارائه خدمات ارتباطی به چندین هزار Node سازمانی، خدمات هوشمند و مدیریت‌شده و بسیاری دیگر از راهکارهای ارزش‌افزوده، مبین‌نت را به انتخاب نخست سازمان‌ها، ارگان‌های دولتی و کسب‌وکارهای کوچک و بزرگ کشور تبدیل کرده است.</p>
+            </div>
+      </section>
+
+
+
+
+    </body>
+</html>
+
